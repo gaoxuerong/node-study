@@ -29,7 +29,7 @@ socket.on('data', (buffer) => {
     oldBuffer = buffer;
 })
 
-
+// seq：包的序号，自增
 let seq = 0;
 /**
  * 二进制包编码函数
