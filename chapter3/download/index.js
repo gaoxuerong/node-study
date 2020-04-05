@@ -8,8 +8,7 @@ app.use(
 )
 app.use(
   mount('/', async (ctx) => {
-    // ctx.body = fs.readFileSync(__dirname + '/source/index.html', 'utf-8')
-    ctx.body = 'body'
+    ctx.body = fs.readFileSync(__dirname + '/source/index.html', 'utf-8')
   })
 )
 app.listen(3000)
